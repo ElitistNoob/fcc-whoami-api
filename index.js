@@ -14,8 +14,9 @@ app.get('/', (req, res) => {
 });
 
 app.get('/api/whoami', (req, res) => {
+  const ipAddress = req.ip.slice(7);
   res.json({
-    ipaddress: req.headers.host.slice(0, 12),
+    ipaddress: ipAddress,
     language: req.headers['accept-language'],
     software: req.headers['user-agent'],
   });
