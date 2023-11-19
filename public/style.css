@@ -52,7 +52,3 @@ li {
 .links li {
     padding-left: 0;
 }
-
-li:first-of-type {
-    padding-bottom: 0.5rem;
-}
