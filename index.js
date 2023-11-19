@@ -13,8 +13,8 @@ app.get('/', (req, res) => {
   res.sendFile(absolutePath);
 });
 
-app.use('/api/whoami', (req, res) => {
-  res.send({
+app.get('/api/whoami', (req, res) => {
+  res.json({
     ipaddress: req.headers.host.slice(0, 12),
     language: req.headers['accept-language'],
     software: req.headers['user-agent'],
