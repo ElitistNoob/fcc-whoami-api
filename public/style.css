@@ -41,6 +41,9 @@ section {
 }
 
 ul {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
     padding-left: 0;
 }
 
